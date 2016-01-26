@@ -6,6 +6,7 @@
   <packaging>pom</packaging>
   <modules>
   	<module>goldgu-demo</module>
+  	<module>goldgu-esb</module>
   </modules>
   
   <repositories>
