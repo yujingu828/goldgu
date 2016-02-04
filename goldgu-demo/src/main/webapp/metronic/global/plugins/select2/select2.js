@@ -2581,6 +2581,7 @@ the specific language governing permissions and limitations under the Apache Lic
             var opts = this.parent.prepareOpts.apply(this, arguments),
                 self=this;
 
+            // TODO validate placeholder is a string if specified
 
             if (opts.element.get(0).tagName.toLowerCase() === "select") {
                 // install the selection initializer

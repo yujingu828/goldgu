@@ -556,7 +556,7 @@ function Calendar(element, instanceOptions) {
 	// Like the vanilla formatDate, but with calendar-specific settings applied.
 	t.formatDate = function(mom, formatStr) {
 
-		// a function that returns a formatStr // 
+		// a function that returns a formatStr // TODO: in future, precompute this
 		if (typeof formatStr === 'function') {
 			formatStr = formatStr.call(t, options, localeData);
 		}

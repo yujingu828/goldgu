@@ -19,10 +19,10 @@ var Login = function () {
 
 	            messages: {
 	                username: {
-	                    required: "用户名是必须的."
+	                    required: "Username is required."
 	                },
 	                password: {
-	                    required: "密码是必需的."
+	                    required: "Password is required."
 	                }
 	            },
 
@@ -31,7 +31,8 @@ var Login = function () {
 	            },
 
 	            highlight: function (element) { // hightlight error inputs
-	                $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
+	                $(element)
+	                    .closest('.form-group').addClass('has-error'); // set error class to the control group
 	            },
 
 	            success: function (label) {
@@ -245,8 +246,8 @@ var Login = function () {
         init: function () {
         	
             handleLogin();
-//            handleForgetPassword();
-//            handleRegister();    
+            handleForgetPassword();
+            handleRegister();    
         }
 
     };
