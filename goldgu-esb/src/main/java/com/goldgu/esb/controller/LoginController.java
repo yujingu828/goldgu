@@ -38,14 +38,12 @@ public class LoginController {
 	 * @return
 	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public ModelAndView login(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("login");
+	public String login(HttpServletRequest request) {
 		String userName = request.getParameter("username");
 		String password = request.getParameter("password");
 		if("admin".equals(userName) && "admin".equals(password)) {
-			mav.setViewName("main");
 		}
 
-		return mav;
+		return "forward:/listDomainInfo";
 	}
 }
