@@ -61,4 +61,8 @@
 	<camelContext id="camel" trace="true" xmlns="http://camel.apache.org/schema/spring">
 		<package>com.goldgu</package>
 	</camelContext>
+	
+	<bean id="themeResolver" class="org.springframework.web.servlet.theme.FixedThemeResolver">
+		<property name="defaultThemeName" value="properties/config" />
+	</bean>
 </beans>
