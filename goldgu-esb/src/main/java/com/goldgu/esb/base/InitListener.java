@@ -42,7 +42,7 @@ public class InitListener implements ServletContextListener {
 		try {
 			camelContext.addRoutes(new RouteBuilder() {
 				public void configure() throws Exception {
-					from("direct:insert").convertBodyTo(String.class, "UTF-8").to("http://localhost:8080/goldgu/insert");
+					from("direct:insert").convertBodyTo(String.class, "UTF-8").to("http://localhost:8080/demo/insert");
 				}
 			});
 		} catch (Exception e) {
